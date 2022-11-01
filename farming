@@ -1,0 +1,12 @@
+local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
+local win = Flux:Window("surivVErise farm", "making memes in your basement at 3 AM tycoon", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
+local tab = win:Tab("auto farm", "http://www.roblox.com/asset/?id=6023426915")
+tab:Button("Inf money loop", "This function may not work sometimes and you can get banned.", function()
+while true do
+
+wait()
+game:GetService("ReplicatedStorage").Events.UploadCurrentMemes:FireServer()
+end
+Flux:Notification("the function was successfully executed!", "Alright")
+end)
+tab:Label("Made by surivVErise, made with remote spy.")
